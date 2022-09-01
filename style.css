@@ -1,0 +1,686 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif, 'FontAwesome';
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading-padding {
+    padding-bottom: 10px;
+}
+
+div.home-landing {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.77), rgba(0,0,0,.35)), url(images/home-hero-au.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav.nav-bar {
+    font-size: 1.2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 999;
+}
+
+nav.nav-bar:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+nav.home-nav-bar {
+    background-color: transparent;
+}
+
+nav.fixed-nav {
+    position: fixed;
+    background-color: rgb(51, 51, 51);
+    transition: 1s;
+}
+
+
+ul.nav-links {
+    display: flex;
+    padding: 15px 35px;
+}
+
+ul.nav-links li.nav-item{
+    margin: 13px 40px;
+    position: relative;
+}
+
+.active {
+    font-weight: bold;
+}
+
+nav.home-nav-bar:hover {
+    background-color: hsla(0,0%,98%,.15);
+    transition: .5s;
+}
+
+li.nav-item:hover::after{
+    width: 100%;
+}
+
+li.nav-item::after{
+    content: '';
+    height: 2px; 
+    width: 0;
+    background: #FFFFFF;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .5s ease-in-out;
+}
+
+nav.nav-bar a{
+    color: white;
+}
+
+
+div.home-hero {
+    padding: 15vw 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1.home-hero-intro {
+    font-size: 3em;
+    letter-spacing: 0.14em;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+}
+
+p.home-hero-intro {
+    font-size: 1.7em;
+    color: #FFFFFF;
+}
+
+div.home-bio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 26vw;
+}
+
+div.home-bio-even {
+    background-color: #e4ebfdda;
+}
+
+div.home-bio-lead {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+p.home-bio-detail-head {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.5em;
+    padding-bottom: 10px;
+}
+
+p.home-bio-detail {
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
+img.home-bio-me {
+    width: 19vw;
+    border-radius: 25px;
+}
+
+img.home-bio-img {
+    width: 20vw;
+}
+
+.home-bio-small-icon {
+    width: 33px;
+    height: 23px;
+    padding-right: 10px;
+}
+
+li.home-bio-list-item {
+    display: flex;
+    font-size: 1.25em;
+    align-items: center;
+    padding: 7px 0;
+}
+
+footer {
+    padding: 40px 8%;
+    background-color: #dde5f3bb;
+    text-align: end;
+}
+
+h3.footer-heading-name {
+    font-size: 1.3em;
+}
+
+ul.footer-social-media-list {
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 1.3em;
+}
+
+li.footer-social-media-list-item {
+    padding-left: 13px;
+}
+
+i.fa-brands {
+    color: rgb(108, 108, 108);
+    transition: .5s;
+}
+
+i.fa-brands:hover {
+    color: #333;
+}
+
+p.footer-attribute {
+    padding-top: 20px;
+    font-size: 0.85em;
+}
+
+a.flaticon-attribute {
+    color: rgb(41, 161, 41);
+    font-weight: bold;
+    position: relative;
+}
+
+a.storyset-attribute {
+    color: #1A3152;
+    font-weight: bold;
+    position: relative;
+}
+
+a.flaticon-attribute::after {
+    content: '';
+    height: 1px; 
+    width: 0;
+    background: rgb(41, 161, 41);
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: .5s ease-in-out;
+}
+
+a.flaticon-attribute:hover::after {
+    width: 100%;
+}
+
+a.storyset-attribute::after {
+    content: '';
+    height: 1px; 
+    width: 0;
+    background: #1A3152;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: .5s ease-in-out;
+}
+
+a.storyset-attribute:hover::after {
+    width: 100%;
+}
+
+
+/* MIS CSS */
+
+
+div.hero-secondary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15%;
+    padding-top: 75px;
+}
+
+div.mis-hero-background {
+    background-color: rgb(215, 250, 243);
+}
+
+img.hero-secondary-img {
+    width: 35vw;
+}
+
+div.hero-secondary-left {
+    margin-right: 20px;
+}
+
+div.hero-secondary-right {
+    padding-left: 4%;
+}
+
+h1.hero-secondary-intro-head {
+    font-size: 2.1em;
+}
+
+h1.hero-secondary-intro-head-short {
+    font-size: 2.5em;
+}
+
+h2.hero-secondary-intro-subhead {
+    padding-top: 3px;
+}
+
+.hero-secondary-intro-detail {
+    padding-top: 15px;
+}
+
+div.mis-content-container {
+    padding: 5% 20%;
+}
+
+div.mis-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.mis-intro-left {
+    padding-right: 10%;
+}
+
+div.mis-intro-detail {
+    padding-top: 20px;
+}
+
+p.content-detail {
+    padding-top: 8px;
+    line-height: 1.4em;
+}
+
+div.mis-plan {
+    background-color: rgb(215, 250, 243);
+}
+
+div.mis-plan-track {
+    padding: 5px 0;
+}
+
+div.mis-data-bg {
+    background-color: rgb(238, 253, 248);
+}
+
+div.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+div.mis-track-left {
+    padding-top: 15px;
+    padding-right: 10%;
+}
+
+img.mis-track-software-img {
+    width: 22vw;
+}
+
+div.mis-track-courses {
+    padding-top: 35px;
+}
+
+h4.mis-track-courses-head {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+h4.mis-track-courses-head::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+div.mis-track-course-list {
+    padding: 0 3.1%;
+}
+
+div.mis-course-frame {
+    float: left;
+    padding: 40px 80px;
+    width: 475px;
+}
+
+div.mis-course-description {
+    padding-top: 15px;
+    padding-left: 8px;
+}
+
+p.mis-course-head {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+img.mis-course-img {
+    width: 15vw;
+    height: 15vw;
+}
+
+
+/* AU Places CSS */
+
+div.au-place-hero-background {
+    background-color: #fff2f2;
+}
+
+div.au-place-map {
+    padding: 7% 5%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+img.au-map {
+    width: 42vw;
+    transition: 1s;
+}
+
+img.au-map:hover {
+    width: 48vw;
+}
+
+div.au-place-map-right {
+    padding-left: 5%;
+}
+
+ol.au-place-building-list {
+    padding-top: 10px;
+    padding-left: 17px;
+    column-count: 3;
+    column-gap: 5vw;
+}
+
+li.au-place-building-list-item {
+    padding-top: 30px;
+    font-size: 1.03em;
+}
+
+div.au-place-important-places {
+    padding: 6% 17%;
+}
+
+div.au-place-odd-row {
+    background-color: #fff6f6;
+}
+
+img.au-place-important-places-img {
+    border-radius: 15px;
+    width: 25vw;
+}
+
+div.au-place-important-places-left {
+    padding-right: 5%;
+}
+
+div.au-place-important-places-right {
+    padding-left: 5%;
+}
+
+p.au-place-important-places-detail {
+    padding-top: 10px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+
+/* AU Food Review */
+
+div.au-food-hero-background {
+    background-color: rgb(255, 250, 234);
+}
+
+img.au-food-hero-secondary-img {
+    width: 32vw;
+    padding: 30px 15px;
+}
+
+div.au-food-restaurant-content {
+    padding: 5% 15%;
+}
+
+h1.au-food-restaurant-heading {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+h1.au-food-restaurant-heading::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background: #333;
+    left: 0;
+    bottom: -5px;
+}
+
+div.au-food-restaurant-frame {
+    border-radius: 20px;
+    padding: 50px 90px;
+    margin-bottom: 6%;
+}
+
+h2.au-food-restaurant-name {
+    padding-bottom: 25px;
+    font-size: 1.6em;
+}
+
+img.au-food-restaurant-img {
+    width: 38vw;
+    height: 42.8vh;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+div.au-food-restaurant-intro {
+    justify-content: flex-start;
+    padding-bottom: 25px;
+}
+
+div.au-food-restaurant-intro-right {
+    padding-left: 5%;
+}
+
+div.au-food-rating-box {
+    margin-top: 25px;
+    line-height: 1.5em;
+    background-color: rgb(255, 255, 255);
+    padding: 16px 20px;
+    border-radius: 10px;
+    height: 31vh;
+}
+
+h4.au-food-rating-lbl {
+    padding-bottom: 20px;
+    font-size: 1.1em;
+}
+
+p.au-food-rating-cat {
+    padding-top: 5px;
+}
+
+p.au-food-rating-overall {
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+img.rating-star {
+    width: 20px;
+}
+
+p.au-food-review-detail {
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+h3.au-food-recommended {
+    padding-top: 35px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+h3.au-food-recommended::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background: #333;
+    left: 0;
+    bottom: 0;
+}
+
+div.au-food-dish-container {
+    padding: 5px 10px;
+}
+
+div.au-food-dish-frame {
+    border-radius: 15px;
+    width: 16.8vw;
+    height: 45vh;
+    background-color: #ffffff;
+    padding: 25px 20px;
+    text-align: center;
+    margin: 20px;
+    float: left;
+}
+
+
+img.au-food-dish-img {
+    border-radius: 7.5px;
+    width: 13.5vw;
+    height: 23vh;
+    object-fit: cover;
+}
+
+p.au-food-dish-name {
+    padding-top: 15px;
+    padding-bottom: 8px;
+    font-size: 1.05em;
+    font-weight: 600;
+}
+
+p.au-food-dish-detail {
+    font-size: 0.9em;
+    text-align: start;
+    padding: 0 15px;
+}
+
+p.au-food-dish-price {
+    padding-top: 20px;
+}
+
+div.au-food-jippy {
+    background-color: rgb(255, 247, 236);
+}
+
+div.au-food-imfinfin {
+    background-color: rgb(243, 243, 243);
+
+}
+
+div.au-food-cafeteria {
+    background-color: rgb(249, 241, 255);
+}
+
+hr.au-food-breakline {
+    margin-bottom: 6%;
+}
+
+img.pizza {
+    position: absolute;
+    width: 200px;
+    right: -70px;
+    top: 52%;
+}
+
+
+/* AU Course Review */
+
+img.au-course-review-hero-img {
+    width: 29vw;
+    padding: 60px 15px;
+}
+
+div.course-review-hero-background {
+    background-color: rgb(254, 234, 255);
+}
+
+div.course-review-content-container {
+    padding: 5% 15%;
+}
+
+table.course-table {
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+th.course-header, td.course-data {
+    padding: 25px 50px;
+    text-align: center;
+}
+
+th.course-header {
+    background-color: rgb(254, 234, 255);
+}
+
+tr.course-even-row {
+    background-color: rgb(250, 250, 250);
+}
+
+div.course-review-background {
+    background-color: rgb(255, 248, 255);
+}
+
+div.course-review-content {
+    padding: 7% 5% 2% 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h4.course-review-name {
+    font-size: 1.1em;
+    padding-bottom: 3px;
+}
+
+p.course-review-content {
+    line-height: 1.45em;
+}
+
+div.course-review-title {
+    position: relative;
+    margin-bottom: 17px;
+}
+
+div.course-review-title::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background: #333;
+    left: 0;
+    bottom: -7px;
+}
+
+div.course-review-content-left {
+    padding-right: 8%;
+}
+
+img.course-review-img {
+    width: 20vw;
+}
